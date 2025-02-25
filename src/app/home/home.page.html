@@ -1,10 +1,11 @@
-<ion-header [translucent]="true">
-  <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
-    Button
+<ion-header class="ion-padding ion-no-border" [translucent]="true">
+  <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" class="ion-no-margin ion-margin-button" expand="block">
+    <!--Button-->
+    <ion-icon name="arrow-dropdown"></ion-icon>
   </ion-button>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-text-center no-scroll">
 
   <ion-text>{{showNumber}}</ion-text> <!--Interpolacion-->
   
@@ -14,7 +15,8 @@
   <ion-toolbar>
     <ion-title>Footer</ion-title>
   </ion-toolbar>
-  <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
-    Button
+  <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" class="ion-no-margin ion-margin-button" expand="block">
+    <ion-icon name="arrow-dropup"></ion-icon>
+    <!--Button-->
   </ion-button>
 </ion-footer>
