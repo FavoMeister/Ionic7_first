@@ -16,4 +16,21 @@ export class HomePage {
     this.showNumber = '00';
   }
 
+  up(){
+    this.n++;
+    this.formatShowNumber();
+  }
+
+  down(){
+    this.n--;
+    this.formatShowNumber()
+  }
+
+  formatShowNumber(){
+    if(this.n < 10){
+      this.showNumber = '0' + this.n;
+    } else {
+      this.showNumber = '' + this.n;
+    }
+  }
 }
